@@ -1,3 +1,2 @@
 include ':app' , ':coreProject'
-
 project(':coreProject').projectDir =  new File("../../")

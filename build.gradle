@@ -43,6 +43,11 @@ dependencies {
     implementation 'com.azure:azure-identity:1.0.8'
 }
 
+compileJava {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
+
 def pomConfig = {
     licenses {
         license([:]) {
@@ -214,13 +219,6 @@ publishing {
 		}
     }
 
-}
-
-
-
-compileJava {
-  sourceCompatibility = 1.8
-  targetCompatibility = 1.8
 }
 
 def getVersionCode() {
